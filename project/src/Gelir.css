@@ -1,0 +1,151 @@
+
+body{
+  background-image: url("./shattered.png");
+  background-color: #cccccc;
+}
+.containerr {
+  
+  width: 1000px;
+  margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  header{
+  background-color: #6f9fd1;
+  text-align: right;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+
+  }
+  .NetTutar{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(0, 213, 255, 0) 0%, rgba(9,121,16,0.6) 50%, rgba(0,212,255,0.0) 100%);
+    border-radius: 10px;
+    padding: 50px 150px;
+    margin-top: 10px;
+
+  }
+  .deger{
+  text-align: center;
+  color: white;
+  
+  }
+  .menü{
+  text-align: left;
+ display: inline-block;
+  }
+  .list{
+    margin-top: 10px;
+
+    border-radius: 10px;
+  display: inline-block;
+  background-color: #6f9fd1;
+  list-style-type: none;
+  text-align: center;
+  min-height: 480px;
+
+  }
+  .list li{
+   color:white;
+  margin: 20px 0px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 40px;
+  transition: padding 0.75s;
+  
+  }
+  .list li:hover{
+  padding: 20px 5px;
+  }
+  .list li a{
+  text-decoration: none;
+  color: white;
+  }
+  .main{
+    display: inline-block;
+position: absolute;
+top: 187px;
+
+  }
+  .tablee{
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    }
+    .tablee th{
+    
+      padding: 5px 125px 5px 0px;
+    
+    }
+    .Gelirler{
+    margin-top: 20px;
+      margin-left: 10px;
+    }
+    footer {
+      background-color: #6f9fd1;
+      width: 100%;
+      margin: 100px auto 15px auto;
+      padding: 5px 0px;
+      border-radius: 10px;
+  
+      color: white; }
+      footer .borderr {
+        border-bottom: 0.02em solid white; }
+      footer h6 {
+        padding: 10px 0px; }
+      footer .navi-list a {
+        list-style-type: none;
+        color: white; }
+        footer .navi-list a:hover {
+          text-decoration: none;
+          border-bottom: 3px solid white; }
+      footer .navi-list li {
+        margin: 2px 0px;
+        font-size: 12px; }
+      footer .mem-list a {
+        list-style-type: none;
+        color: white; }
+        footer .mem-list a:hover {
+          text-decoration: none;
+          border-bottom: 3px solid white; }
+      footer .mem-list li {
+        margin: 2px 0px;
+        font-size: 12px; }
+      footer .fol-list li {
+        margin: 10px 0px;
+        font-size: 12px; }
+        footer .fol-list li a {
+          list-style-type: none;
+          color: white; }
+          footer .fol-list li a:hover {
+            text-decoration: none;
+            border-bottom: 3px solid white; }
+          footer .fol-list li a i {
+            margin-right: 15px;
+            vertical-align: sub; }
+      footer .con-list li {
+        margin: 2px 0px;
+        font-size: 12px; }
+        footer .con-list li a {
+          list-style-type: none;
+          color: white; }
+          footer .con-list li a:hover {
+            text-decoration: none;
+            border-bottom: 3px solid white; }
+          footer .con-list li a i {
+            margin-right: 15px;
+            vertical-align: sub; }
+      footer .diag {
+        margin-left: 130px;
+        font-size: 10px; }
+
+#chartContainer{
+display: inline-block;
+}
+.logo{
+
+  float: left;
+  margin-left: 10px;
+  font-size: 20px;
+}

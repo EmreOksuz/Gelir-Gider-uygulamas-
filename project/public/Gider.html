@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <script src="https://kit.fontawesome.com/d8452b8378.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../src/Gider.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+  
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script type="text/JavaScript" href="../src/jquery.js"></script>
+  <script type="text/JavaScript" src="../src/Ortak.js"></script>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+ 
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    
+      <div class="containerr">
+              <header class="App-header pl-2 shadow">
+                
+                <i class="fas fa-cart-arrow-down logo text-white mr-2 mt-2 mb-2"></i>
+                
+              <a href="./Ayarlar.html" class=" text-white mt-2 mb-2">
+              <i class="fas fa-user-circle  text-white mr-2 mt-2 mb-2"></i>
+              <span class=" text-white pr-3">
+              Kullanıcı Adı
+              </span>
+              </a>
+              </header>
+        
+              <div class="NetTutar shadow">
+              
+              <div class="deger">
+             <span class="toplampara">0.000,000</span>      
+             <span> Try</span> 
+              
+             </div>
+              </div>
+        
+              <div class="Menü">
+        
+                <ul class="list shadow">
+                <li><a href="./index.html">Anasayfa</a></li>
+                <li><a href="./Gelir.html">Gelir</a></li>
+                <li><a href="./Gider.html">Gider</a></li>
+                <li><a href="./Ayarlar.html">Profil</a></li>
+                </ul>
+        
+        <div class="main">
+
+            <h5 class="Giderler ">Giderler</h5>
+            <table class="tablee table-striped table-hover tablegider">
+             
+                <tr>
+                  <th>Ad</th>
+                  <th>Tarih</th>
+                  <th>Fiyat</th>
+                  <th>Kategori</th>
+                  <th>Tekrar</th>
+                </tr>
+           
+              
+              </table>
+                      <div id="chartContainer" style="height: 250px; width: 600px;"></div>
+
+        </div>
+
+
+        <footer class="shadow">
+            <div class="row container ">
+          <div class="col ">
+          <h6 class="borderr">Navigation</h6>
+           <ul class="navi-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Blog</a></li>
+           </ul>
+          </div>
+          <div class="col ">
+          <h6  class="borderr">For members</h6>
+           <ul class="mem-list">
+            <li><a href="">Forums</a></li>
+            <li><a href="">Promotions</a></li>
+            <li><a href="">News</a></li>
+           </ul>
+          </div>
+          <div class="col ">
+          <h6  class="borderr">Follow us</h6>
+           <ul class="fol-list">
+            <li><i class="fab fa-facebook-square fa-2x  mr-3"></i><a href="">Facebook</a></li>
+            <li><i class="fab fa-twitter-square fa-2x mr-3"></i><a href="">Twitter</a></li>
+            <li><i class="fas fa-rss-square fa-2x mr-3"></i><a href="">RSS</a></li>
+           </ul>
+          </div>
+          <div class="col ">
+              <h6  class="borderr">Contacs</h6>
+              <ul class="con-list">
+            <li><i class="fas fa-home  mr-3"></i><a href="">Ktü Teknokent , Trabzon/Ortahisar</a></li>
+            <li><i class="fas fa-phone  mr-3"></i><a href="">+90-000-000-0000</a></li>
+            <li><i class="fas fa-envelope mr-3"></i><a href="">emreoksuz@gmail.com</a></li>
+          
+           </ul>
+          
+              </div>
+                </div>
+            
+                  
+                </footer>
+
+              </div>
+        
+      
+            </div>
+            <script>
+
+                $(document).ready(function(){
+                  var sumgider=0;
+                
+                window.onload = function() {
+                
+                var chart = new CanvasJS.Chart("chartContainer", {
+                  backgroundColor: "transparent",
+                  title: {
+                  text: "Giderler için İstatistik"	},
+                  animationEnabled: true,
+                  data: [{
+                    type: "pie",
+                    startAngle: 40,
+                    showInLegend: "true",
+                    legendText: "{label}",
+                    indexLabelFontSize: 16,
+                    indexLabel: "{label} - {y}%",
+                    dataPoints: [
+            /*        { y: 40.28, label: "Fatura" },
+                      */
+                    ]
+                  }]
+                });
+                chart.render();
+                for(a=0;a<parseInt(localStorage.getItem("gidertıklama"));a++){
+                  sumgider+=parseFloat(localStorage.getItem("giderfiyat."+a));
+
+                }
+                flosumgider=parseFloat(sumgider).toFixed(3);
+                for(a=0;a<parseInt(localStorage.getItem("gidertıklama"));a++){
+
+                chart.data[0].addTo("dataPoints", {y:((localStorage.getItem("giderfiyat."+a)/flosumgider)*100).toFixed(2), label: localStorage.getItem("giderkategori."+a)});
+                }
+              }
+                });
+                </script>    
+  
+  
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

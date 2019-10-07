@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" type="text/css" href="../src/App.css"/>
+    <script src="https://kit.fontawesome.com/d8452b8378.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="../src/App.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+    <script type="text/JavaScript" href="../src/jquery.js"></script>
+    <script type="text/JavaScript" src="../src/Ortak.js"></script>
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+ 
+
+ 
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+
+    
+      <div class="containerr">
+      <header class="App-header pl-2 shadow">
+          <i class="fas fa-cart-arrow-down logo text-white mr-2 mt-2 mb-2"></i>
+      <a href="./Ayarlar.html" class=" text-white mt-2 mb-2">
+      <i class="fas fa-user-circle  text-white mr-2 mt-2 mb-2"></i>
+      <span class=" text-white pr-3">
+      Kullanıcı Adı
+      </span>
+      </a>
+      </header>
+  
+      <div class="NetTutar shadow">
+      
+      <div class="deger" id="deger">
+     <span class="toplampara">0.000,000</span>      
+     <span> Try</span> 
+      
+     </div>
+      </div>
+  
+      <div class="Menü ">
+  
+        <ul class="list shadow">
+        <li><a href="./index.html">Anasayfa</a></li>
+        <li><a href="./Gelir.html">Gelir</a></li>
+        <li><a href="./Gider.html">Gider</a></li>
+        <li><a href="./Ayarlar.html">Profil</a></li>
+        </ul>
+        <div class="main">
+
+          <div class="gelir shadow">
+            <p class="gelirb">Gelir</p>
+            <span class="gelirdeger">0 Try 
+            </span>
+
+          </div>
+          <div class="gider shadow">
+            <p class="gelirb">Gider</p>
+            <span class="giderdeger">0 Try 
+            </span>
+          </div>
+          <div class="gelirekle shadow">
+            <button type="button" class="btn btn-success btn-m" data-toggle="modal" data-target="#myModal">Gelir Ekle</button>                
+                <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+            
+                      <h4 class="modal-title">Gelir Ekle</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <form action="">
+                              Gelir Adı:<br>
+                              <input type="text" id="geliradi" name="geliradi" value="">
+                              <br><br>
+                              Miktar:<br>
+                              <input type="number" id="gelirmiktar" name="gelirmiktar" value=""> TL
+                              <br><br>
+                              Tarih:<br>
+                              <input type="date" id="gelirgün" name="gelirgün">
+                              <br><br>
+                              Kategori:<br>
+                              <select id="gelirlist">
+                                  <option value="maas">Maaş</option>
+                                  <option value="prim">Prim</option>
+                                  <option value="komisyon">Komisyon</option>
+                                  <option value="dükkankirasi">Dükkan Kirası</option>
+                                  <option value="danismanlik">Danışmanlık</option>
+                                  <option value="evkirasi">Ev Kirası</option>
+                                  <option value="bursgeliri">Burs/Bağış Geliri</option>
+                                  <option value="harclik">Harçlık</option>
+                                  <option value="sansoyunu">Şans Oyunu</option>
+                                  <option value="alacaklar">Alacaklar</option>
+                                  <option value="diger">Diğer</option>
+      
+                                </select>
+                                
+                                <br><br>
+      
+                                <input type="checkbox" id="gelirtekrar" name="gelirtekrar"> Tekrarla
+                                &emsp;&emsp;
+                                <div id="gtekrar">
+                                Tekrarlanma Sıklığı:
+                                <select id="gelirtekrarlist">
+                                    <option value="yil">Yılda Bir</option>
+                                    <option value="ücay">3 Ayda Bir</option>
+                                    <option value="ikiay">2 Ayda Bir</option>
+                                    <option value="ay">Her Ay</option>
+                                    <option value="herhafta">Her Hafta</option>
+                                    <option value="gün">Her Gün</option>
+                                  
+        
+                                  </select>
+                                </div><br><br>
+
+                              <input id="gelirbtn" type="submit" value="Tamam" class="btn btn-primary" data-dismiss="modal">
+                            </form>               
+                              </div>
+                    </div>
+                  </div>      </div>     </div>
+          </div>
+          <div class="giderekle shadow">
+            <button type="button" class="btn btn-danger btn-m" data-toggle="modal" data-target="#myModal2">Gider Ekle</button>                
+            <div class="modal fade" id="myModal2" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content ">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Gider Ekle</h4>
+
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <form action="">
+                        Gider Adı:<br>
+                        <input type="text" id="gideradi" name="gideradi" value="">
+                        <br><br>
+                        Miktar:<br>
+                        <input type="number" id="gidermiktar" name="giderrmiktar" value="" class=""> TL
+                        <br><br>
+                        Tarih:<br>
+                        <input type="date" id="gidergün" name="gidergün">
+                        <br><br>
+                        Kategori:<br>
+                        <select id="giderlist">
+                            <option value="ulasim">Fatura</option>
+                            <option value="fatura">Fatura</option>
+                            <option value="egitim">Eğitim</option>
+                            <option value="eglence">Eğlence</option>
+                            <option value="vergi">Vergi</option>
+                            <option value="yemek">Yemek</option>
+                            <option value="hediye-bagis">Hediye/Bağış</option>
+                            <option value="saglik">Sağlık</option>
+                            <option value="kira">Kira</option>
+                            <option value="aidat">Aidat</option>
+                            <option value="tamir">Tamir</option>
+                            <option value="cocuklar">Çocuklar</option>
+                            <option value="kisiselbakim">Kişisel Bakım</option>
+                            <option value="alisveris">Alışveriş</option>
+                            <option value="seyahat-tatil">Seyahat/Tatil</option>
+                            <option value="borcödemesi">Borç Ödemesi</option>
+                            <option value="giyim">Giyim</option>
+                            <option value="diger">Diğer...</option>
+                          </select>
+                         <br><br>
+                          <input type="checkbox" id="giderrtekrar" name="giderrtekrar"> Tekrarla
+                        
+                          <div id="gitekrar">
+                          Tekrarlanma Sıklığı:
+                          <select id="gidertekrarlist">
+                              <option value="yil">Yılda Bir</option>
+                              <option value="ücay">3 Ayda Bir</option>
+                              <option value="ikiay">2 Ayda Bir</option>
+                              <option value="ay">Her Ay</option>
+                              <option value="herhafta">Her Hafta</option>
+                              <option value="gün">Her Gün</option>
+                            </select>
+                          </div><br><br>
+
+                        <input id="giderbtn" type="submit" value="Tamam" class="btn btn-primary" data-dismiss="modal">
+                      </form>               
+                        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5 class="harcama ">Son aktiviteler</h5>
+          <table class="tablee table-striped table-hover ">
+           
+              <tr>
+                <th>Adı</th>
+                <th>Gelir/Gider</th>
+                <th>Tarih</th>
+                <th>Fiyat</th>
+                <th>Kategori</th>
+                <th>Tekrar</th>
+              </tr>
+            
+            </table>
+      </div>
+  
+      <footer class="shadow">
+          <div class="row container ">
+        <div class="col ">
+        <h6 class="borderr">Navigation</h6>
+         <ul class="navi-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Blog</a></li>
+         </ul>
+        </div>
+        <div class="col ">
+        <h6  class="borderr">For members</h6>
+         <ul class="mem-list">
+          <li><a href="">Forums</a></li>
+          <li><a href="">Promotions</a></li>
+          <li><a href="">News</a></li>
+         </ul>
+        </div>
+        <div class="col ">
+        <h6  class="borderr">Follow us</h6>
+         <ul class="fol-list">
+          <li><i class="fab fa-facebook-square fa-2x  mr-3"></i><a href="">Facebook</a></li>
+          <li><i class="fab fa-twitter-square fa-2x mr-3"></i><a href="">Twitter</a></li>
+          <li><i class="fas fa-rss-square fa-2x mr-3"></i><a href="">RSS</a></li>
+         </ul>
+        </div>
+        <div class="col ">
+            <h6  class="borderr">Contacs</h6>
+            <ul class="con-list">
+          <li><i class="fas fa-home  mr-3"></i><a href="">Ktü Teknokent , Trabzon/Ortahisar</a></li>
+          <li><i class="fas fa-phone  mr-3"></i><a href="">+90-000-000-0000</a></li>
+          <li><i class="fas fa-envelope mr-3"></i><a href="">emreoksuz@gmail.com</a></li>
+        
+         </ul>
+        
+            </div>
+              </div>
+          
+                
+              </footer>
+
+
+    </div>
+  
+  <script>    
+    
+  </script> 
+   </body>
+</html>
